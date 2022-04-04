@@ -66,7 +66,7 @@ svm_confusion_matrix = confusion_matrix(pred_svm_model, y_test)
 print("SVM Confusion Matrix: \n",  svm_confusion_matrix)
 
 # EXTRA --------------------------------------------------------------------------------------
-print("\n--------------------------------------\nExtra LogisticRegression()\n--------------------------------------")
+print("\n--------------------------------------\nLogisticRegression()\n--------------------------------------")
 # Making predictions
 from sklearn.preprocessing import StandardScaler
 
@@ -87,6 +87,6 @@ iris_3 = np.array([7.1, 2.3, 6.1, 2.1])
 
 sample_iris = np.array([iris_1, iris_2, iris_3])
 
-# Make predictions
+# Making predictions
 print("Predictions:\n", diff_log_model.predict(sample_iris))
 print("Probability:\n", diff_log_model.predict_proba(sample_iris))
